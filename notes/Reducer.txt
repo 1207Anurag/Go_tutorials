@@ -1,0 +1,9 @@
+So what is Reduce
+Imagine an array of object with N number of entries. You want to calculate the sum and average value in the array and starts writing the code,
+
+sum := 0
+arr := [...]int{1, 3, 5, 7, 11}
+for _, num := range arr {
+    sum += num
+}
+avg := float32(sum) / float32(len(arr))
