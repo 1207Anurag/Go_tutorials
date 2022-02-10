@@ -18,11 +18,9 @@ import "fmt"
 */
 var pow = []int{1, 2, 8, 16, 32, 64, 128}
 
-func main() {
+// func main() {
 
-}
-
-
+// }
 
 /*func main() {
 	//	arr1 := []int{4, 5, 6, 8, 12}
