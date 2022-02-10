@@ -1,0 +1,20 @@
+interface-->set of related object and types
+like a rectangle and circle both have area...both are shapes
+
+it lets us define some kinds of behaviour that is similar between 
+objects or types
+
+
+"example--> if it quacks, moves and swims like a duuck then it should be a duck"
+we are conceren with only the behaviour not the actual thing
+
+or a socket..dosent know whome it is giving power the only work it do is to give power to
+powerDrawerInterface{
+    Draw(power int)
+}
+interfact is an abstract type it only describe the expexted behaviour
+
+type printer interface(){
+	//behaviour is of print
+	print()  //just a method name without code
+}

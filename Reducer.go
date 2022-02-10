@@ -10,6 +10,8 @@ func main() {
 	fmt.Println(result)
 	result1 := reduce(numbers, sub)
 	fmt.Println(result1)
+	//r := AnotherWay(numbers)
+	//fmt.Println(r)
 }
 
 func reduce(nums []int, method func(int, int) int) int {
@@ -28,3 +30,11 @@ func add(a, b int) int {
 func sub(a, b int) int {
 	return a - b
 }
+
+/*func AnotherWay(nums []int) int {
+	result := 0
+	for _, element := range nums {
+		result += element
+	}
+	return result
+}*/

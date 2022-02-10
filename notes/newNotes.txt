@@ -1,0 +1,49 @@
+//typed constant in golang
+	//%v-> value in default format
+	//%T-> syntax rep of type of value
+    We can re-initialize a new value in a variable but we can’t change the value of constant once initialized
+    func main() {
+
+	var myConst float64 = math.Sqrt(4)
+	fmt.Printf("%v,%T\n", myConst, myConst)
+
+}  //it will give us...2, float64
+
+func main() {
+
+	const myConst float64 = math.Sqrt(4)
+	fmt.Printf("%v,%T\n", myConst, myConst)
+
+}  //it will give error
+When we use the normal variable we get math.Sqrt(4) as 2. But when this is done for constants in Go language, we get an error.
+
+ 
+GO has a very strong type system that doesn’t allow implicit conversion between any of the types. 
+
+typed constant--> 
+const declared specifying the type in delaration is called typed constant
+const a int 32=8
+(only assisnged to variable of type 32 otherwise raise an error)
+ 
+ untyped constant-->
+ whose type has not been specified, named or unnamed
+
+ [var declarations are globally scoped or function scoped can be updated and redeclared in the scope ]
+ [while const are block scoped. cannot be updated as well as redeclared] 
+ [let variable can be updated but cannot be redeclared ]
+
+constant untyped 
+op between const and non constant
+constant scope
+constant Iota
+enumerated constant--> const a=iota [used for counters]
+_’ is used as a write-only variable. It doesn’t take memory in our program and we can’t read as it’s not stored
+
+
+2nd article
+
+incrementing constant in go can be created using iota (counter) [identifiers]
+
+//skipping the values
+//advantage of using Iota
+-> used maily for the bitmask...quickly create correct values by using the bit shift
