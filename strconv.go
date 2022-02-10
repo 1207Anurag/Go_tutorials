@@ -18,6 +18,9 @@ func main() {
 	ConvertStringToInteger(num)
 	ConvertStringToBoolean(num2)
 	ConvertStringToFloat(num3)
+	ConvertIntegerToString(543)
+	ConvertFloatToString(3.14758)
+	ConvertBooleanToString(false)
 }
 func ConvertStringToInteger(s string) {
 	intVar, err := strconv.Atoi(s)
@@ -32,4 +35,16 @@ func ConvertStringToBoolean(s string) {
 func ConvertStringToFloat(s string) {
 	f, err := strconv.ParseFloat(s, 64)
 	fmt.Println(f, err, reflect.TypeOf(f))
+}
+func ConvertIntegerToString(i int) {
+	f := strconv.Itoa(i)
+	fmt.Println(f, reflect.TypeOf(f))
+}
+func ConvertFloatToString(f float64) {
+	var s string = strconv.FormatFloat(f, 'E', -1, 32)
+	fmt.Println(s)
+}
+func ConvertBooleanToString(b bool) {
+	var s string = strconv.FormatBool(b)
+	fmt.Println(s)
 }
