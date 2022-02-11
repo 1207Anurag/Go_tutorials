@@ -34,9 +34,7 @@ func ConvertStringToBoolean(s string) {
 
 func ConvertStringToFloat(s string) {
 	f, err := strconv.ParseFloat(s, 64)
-	if err!=nill{
-		
-	}
+
 	fmt.Println(f, err, reflect.TypeOf(f))
 }
 func ConvertIntegerToString(i int) {

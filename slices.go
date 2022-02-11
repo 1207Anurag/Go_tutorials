@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var s []int
+	/*var s []int
 	printSlices(s)
 	//appending
 	s = append(s, 4)
@@ -32,8 +32,21 @@ func main() {
 		//elements present in the slice of string into a single string. This function is available in the string package.
 		fmt.Println(strings.Join(board[i], " "))
 	}*/
+	//creation of slices using inbuilt function make
+ //func make([]T, len,cap) []T
+//  b:=[]string{"g","o","l","a","n","g"}
+//  sliced:=b[1:4]
+//  fmt.Println(sliced)
+
+//appending at the end of the slice
+// sliceArr:=[]int{1,2,3,4,5}
+// fmt.Println(sliceArr,len(sliceArr),cap(sliceArr))
+// sliceArr = append(sliceArr, 8,9,4)
+// fmt.Println(sliceArr,len(sliceArr),cap(sliceArr))
+
 
 }
 func printSlices(s []int) {
 	fmt.Println(len(s), cap(s))
 }
+

@@ -1,0 +1,77 @@
+//Go Slices: usage and internals
+/Go codes often don't make use of array coz of it's inflexibility
+
+we can create a slice with a built in function called make
+//relation between len and capacity
+-> len and cap both will return 0 for nil slice
+
+//Internals of slicing
+
+-Slice if a descriptor of an array segment, 
+-it consist of pointer to the array, len of the segment and capacity
+-capacity is number of element underlying array
+- slice does not copy the slice's data, it create new slices that points to the original array
+-slices (Never grows) instead it creates a new slices instead and copy the data into the new one"!!!!!
+//this is the dynamic array implementation (Growing Slices)
+
+"Possible Gotcha"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
